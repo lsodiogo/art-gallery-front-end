@@ -1,1 +1,4 @@
-# art-gallery
+# ART GALLERY - FRONT-END
+
+---
+---
