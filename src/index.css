@@ -63,6 +63,15 @@ table {
 
 
 
+/* --------------- MEDIA SCREEN SIZES --------------- */
+/* MEDIA SCREEN SIZES USED */
+/* @media screen and (max-width: 1350px) */
+/* @media screen and (max-width: 815px) */
+/* @media screen and (max-width: 600px) */
+/* --------------- MEDIA SCREEN SIZES --------------- */
+
+
+
 /* --------------- ALL --------------- */
 body {
    font-family: "Poiret One", sans-serif;
@@ -70,8 +79,26 @@ body {
 }
 
 .main-container {
-   margin-top: 125px;
+   margin-top: 255px;
    min-height: 100vh;
+}
+
+@media screen and (max-width: 1350px) {
+   .main-container {
+      margin-top: 145px;
+   }
+}
+
+@media screen and (max-width: 815px) {
+   .main-container {
+      margin-top: 115px;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .main-container {
+      margin-top: 115px;
+   }
 }
 /* --------------- ALL --------------- */
 
@@ -79,29 +106,20 @@ body {
 
 /* --------------- HEADER --------------- */
 .header {
-   background-color: #80835f;
-
+   background-color: #000000;
+   top: 0;
    overflow: hidden;
    z-index: 10000;
    position: fixed;
    width: 100%;  
 }
 
-.header.visible {
-   top: 0px;
-   animation: top 1s ease-in-out;
-}
-
-.header.hidden {
-   top: -50px;
-   animation: top 1s ease-in-out;
-}
-
 .topline {
 	position: relative;
 	height: 5px;
-	background: rgb(112,108,71);
-   background: linear-gradient(90deg, rgba(112,108,71,1) 0%, rgba(128,131,95,1) 50%, rgba(171,140,105,1) 100%);
+   background-color: #000000;
+	/* background: rgb(112,108,71);
+   background: linear-gradient(90deg, rgba(112,108,71,1) 0%, rgba(128,131,95,1) 50%, rgba(171,140,105,1) 100%); */
 }
 
 .header a {
@@ -111,21 +129,17 @@ body {
    padding: 0px 30px;
    
    font-size: 20px;
-   line-height: 120px;
+   line-height: 250px;
    letter-spacing: 3px;
 }
 
 a.header-button-left {
    font-size: 45px;
-   letter-spacing: 10px;
+   letter-spacing: 25px;
 }
 
 .header-right {
    float: right;
-}
-
-a.header-button-right:hover {
-   background-color: #AB8C69;;
 }
 
 a.header-button-left:hover {
@@ -133,12 +147,16 @@ a.header-button-left:hover {
    color: #AB8C69;
 }
 
+a.header-button-right:hover {
+   background-color: #AB8C69;
+}
+
 a.header-button-right-active {
    background-color: #FFFFFF;
    color: #AB8C69;
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1350px) {  
    .header a {
       display: block;
       text-align: center;
@@ -154,6 +172,7 @@ a.header-button-right-active {
       line-height: 80px;
       width: 100%;
       font-size: 20px;
+      letter-spacing: 10px;
    }
 }
 
@@ -165,33 +184,11 @@ a.header-button-right-active {
       line-height: 50px;
       font-size: 10px;
    }
-   .header-right {
-      display: flex;
-      width: 100%;
-   }
-/*    .header-right img {
-      display: none;
-   } */
-/*    a.header-button-left {
-      width: 100%;
-   } */
 }
 
 @media screen and (max-width: 600px) {
-   /* .header-right img {
-      display: flex;
-   } */
-   /* .header-right span {
-      display: none;
-   } */
-   .header-right {
-      height: 50px;
-      align-items: center;
-   }
-   a:hover, a.header-button-right {
-      height: 50px;
-      display: flex;
-      align-items: center;
+   .header-right a {
+      font-size: 7px;
    }
 }
 /* --------------- HEADER --------------- */
@@ -211,26 +208,138 @@ a.header-button-right-active {
 
 
 
-footer {
-   background-color: #706C47;
-   padding: 50px;
+/* --------------- FOOTER --------------- */
+.footer-container {
+   background-color: #000000;
+   padding: 50px 0px;
    z-index: 100000;
 
    display: flex;
    align-items: center;
    justify-content: center;
-   gap: 100px;
+   gap: 250px;
+}
+
+.footer-container a {
+   color: #FFFFFF;
+   letter-spacing: 10px;
+}
+
+.footer-logo a:hover {
+   color: #AB8C69;
+}
+
+.footer-information {
+   color: #FFFFFF;
+   line-height: 30px;
+}
+
+.footer-information a:hover {
+   color: #AB8C69;
+}
+
+.footer-contacts {
+   padding-top: 25px;
+   display: flex;
+   flex-direction: column;
+}
+
+.footer-contacts div {
+   display: flex;
+   gap: 10px;
+}
+
+.footer-contacts img {
+   width: 20px;
+}
+
+.footer-links {
+   line-height: 100px;
+}
+
+.footer-links div {
+   border-bottom: 1px solid #AB8C69;
+   padding: 0px 100px 0px 15px;
+}
+
+.footer-links div:hover {
+   background-color: #AB8C69;
+}
+
+.copyrights-container {
+   padding: 0px 50px;
+   
+   height: 70px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   color: #000000;
+   letter-spacing: 3px;
+   font-size: 11px;
+}
+
+.copyrights-container a {
+   color: #000000;
+}
+
+.copyrights {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   gap: 30px;
+}
+
+
+.credits {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+
+   color: #000000;
 }
 
 .bottomline {
 	position: relative;
 	height: 5px;
-   background: rgb(171,140,105);
-   background: linear-gradient(90deg, rgba(171,140,105,1) 0%, rgba(128,131,95,1) 50%, rgba(112,108,71,1) 100%);
+   background-color: #000000;
+}
+
+@media screen and (max-width: 1350px) {
+   .footer-container {  
+      gap: 50px;
+   }
+}
+
+@media screen and (max-width: 815px) {
+   .footer-container {  
+      flex-direction: column;
+      gap: 50px;
+   }
 }
 
 @media screen and (max-width: 600px) {
-   footer {
-      gap: 10px;
+   .footer-container {  
+      flex-direction: column;
+      gap: 25px;
+   }
+
+   .footer-logo div {
+      font-size: 20px;
+   }
+   
+   .footer-container a {
+      font-size: 10px;
+   }
+
+   .copyrights-container {
+      padding: 0px 5px;
+      letter-spacing: 0px;
+      font-size: 7px;
+   }
+
+   .copyrights {
+      gap: 5px;
    }
 }
+/* --------------- FOOTER --------------- */

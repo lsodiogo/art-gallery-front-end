@@ -41,31 +41,31 @@ function Header() {
 
    return (
       <>
-         <header className={visible ? "header visible" : "header hidden"}>          
+         <header className={visible ? "header" : null}>          
             <div className="topline"></div>
 
             <nav className="header-left">
                <Link href="/" className="header-button-left">
-                  <h1>ART GALLERY</h1>
+                  <div>ART GALLERY</div>
                </Link>
             </nav>
 
             <nav className="header-right">
 
                <LinkActivated href="/">
-                  <span>Home</span>
+                  <div>Home</div>
                </LinkActivated>
 
                <LinkActivated href="/gallery">
-                  <span>Gallery</span>
+                  <div>Gallery</div>
                </LinkActivated>
 
                <LinkActivated href="/about">
-                  <span>About</span>
+                  <div>Our History</div>
                </LinkActivated>
 
                <LinkActivated href="/contact">
-                  <span>Contact</span>
+                  <div>Contact</div>
                </LinkActivated>
             </nav>
          </header>

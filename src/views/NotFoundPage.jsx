@@ -9,7 +9,7 @@ function NotFoundPage() {
                 <div>PAGE NOT FOUND</div>
                 
                 <Link href="/">
-                  <span>go back home</span>
+                  <div>go back home</div>
                 </Link>
             </div>
         </>

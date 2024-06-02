@@ -47,7 +47,7 @@ function HomePage() {
                   onChange={event => InputTextHandleChange(event)}
                />
                <label htmlFor="input_txt" className="p-component">Name</label>
-            </span>
+            </div>
 
             <br/>
 

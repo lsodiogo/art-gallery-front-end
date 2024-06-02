@@ -11,6 +11,8 @@ import HomePage from "./views/HomePage";
 import GalleryPage from "./views/GalleryPage";
 import AboutPage from "./views/AboutPage";
 import ContactPage from "./views/ContactPage";
+import TermsConditionsPage from "./views/TermsConditionsPage";
+import PrivacyPolicyPage from "./views/PrivacyPolicyPage";
 import NotFoundPage from "./views/NotFoundPage";
 import Footer from "./components/Footer";
 
@@ -38,6 +40,14 @@ function App() {
 
         <Route path="/contact">
           <ContactPage />
+        </Route>
+
+        <Route path="/termsandconditions">
+          <TermsConditionsPage />
+        </Route>
+
+        <Route path="/privacypolicy">
+          <PrivacyPolicyPage />
         </Route>
 
         <Route>
