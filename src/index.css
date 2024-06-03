@@ -107,11 +107,21 @@ body {
 /* --------------- HEADER --------------- */
 .header {
    background-color: #000000;
-   top: 0;
+
    overflow: hidden;
    z-index: 10000;
    position: fixed;
    width: 100%;  
+}
+
+.header.visible {
+   top: 0px;
+   animation: top 1s ease-in-out;
+}
+
+.header.hidden {
+   top: -50px;
+   animation: top 1s ease-in-out;
 }
 
 .topline {

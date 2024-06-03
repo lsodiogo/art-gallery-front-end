@@ -41,7 +41,7 @@ function Header() {
 
    return (
       <>
-         <header className={visible ? "header" : null}>          
+         <header className={visible ? "header visible" : "header hidden"}>          
             <div className="topline"></div>
 
             <nav className="header-left">
