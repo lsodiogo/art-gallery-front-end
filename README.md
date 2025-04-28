@@ -10,7 +10,7 @@ One of the most discerning and innovative antique & art enthusiast dealers in Br
 
 # MOOD BOARD
 
-![MOOD BOARD](https://github.com/lsodiogo/art-gallery-front-end/blob/main/docs/ART_GALLERY_MOOD_BOARD.pdf)
+![MOOD BOARD](https://github.com/lsodiogo/art-gallery-front-end/blob/main/docs/ART_GALLERY_MOOD_BOARD.png)
 
 ---
 
